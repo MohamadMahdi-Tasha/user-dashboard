@@ -1,3 +1,6 @@
+// Importing Part
+import '@/app/index.css';
+
 // Defining Meta Data Of Pages
 export const metadata = {
     title: 'داشبورد کاربر',
