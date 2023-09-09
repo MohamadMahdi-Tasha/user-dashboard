@@ -8,6 +8,13 @@ module.exports = {
       './components/**/*.{js,jsx}',
       './chunks/*.{js,jsx}',
   ],
-  theme: {},
+  theme: {
+      extend: {
+          colors: {
+              theme: '#FF6120',
+              darkBlue: '#2D324F',
+          }
+      }
+  },
   plugins: [],
 }

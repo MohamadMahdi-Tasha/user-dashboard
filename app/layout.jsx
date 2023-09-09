@@ -1,6 +1,7 @@
 // Importing Part
 import '@/app/index.css';
 import localFont from "next/font/local";
+import '@/public/assets/styles/bootstrap-icons.css';
 
 // Defining Our Font
 const yekanBakhFont = localFont({
