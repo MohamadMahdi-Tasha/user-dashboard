@@ -1,5 +1,32 @@
 // Importing Part
 import '@/app/index.css';
+import localFont from "next/font/local";
+
+// Defining Our Font
+const yekanBakhFont = localFont({
+    src: [
+        {
+            path: '../public/assets/font/YekanBakh/YekanBakh-Black.woff2',
+            weight: '900',
+            style: 'normal',
+        },
+        {
+            path: '../public/assets/font/YekanBakh/YekanBakh-Bold.woff2',
+            weight: '700',
+            style: 'italic',
+        },
+        {
+            path: '../public/assets/font/YekanBakh/YekanBakh-Regular.woff2',
+            weight: '500',
+            style: 'normal',
+        },
+        {
+            path: '../public/assets/font/YekanBakh/YekanBakh-Light.woff2',
+            weight: '300',
+            style: 'italic',
+        },
+    ],
+})
 
 // Defining Meta Data Of Pages
 export const metadata = {
@@ -17,7 +44,7 @@ export default function LayoutComponent({children}) {
     // Returning JSX
     return (
         <html lang={'fa'}>
-            <body dir={'rtl'}>
+            <body dir={'rtl'} className={yekanBakhFont.className}>
                 {children}
             </body>
         </html>
