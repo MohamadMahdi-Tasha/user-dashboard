@@ -36,6 +36,16 @@ export default function SignUpPage() {
                         <InputWithLabelComponent id={'password'} label={'رمز عبور'} type={'password'} required={true} />
                         <InputWithLabelComponent id={'password'} label={'تکرار رمز عبور'} type={'password'} required={true} />
                         <ImageValidationInputComponent />
+                        <div className={'flex items-center gap-[10px] mb-[50px]'}>
+                            <input required className={'w-[20px] h-[20px] rounded-[10px] accent-theme'} type="checkbox" id={'accept-rules'} name={'accept-rules'}/>
+                            <label className={'text-darkBlue font-normal text-[16px]'} htmlFor="accept-rules">
+                                اینجانب کلیه
+                                <span className={'font-bold text-theme'}> مفاد شرایط </span>
+                                و
+                                <span className={'font-bold text-theme'}> ضوابط خرید </span>
+                                و استفاده را مطالعه نمودم و پذیرفتم
+                            </label>
+                        </div>
                         <button className={'p-[20px] rounded-[10px] bg-theme text-darkBlue text-[18px] font-bold text-center truncate w-full'}>ورود</button>
                     </form>
                     <h6 className={'text-center font-normal text-darkBlue text-[18px]'}>

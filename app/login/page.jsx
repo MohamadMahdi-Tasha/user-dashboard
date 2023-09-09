@@ -36,7 +36,7 @@ export default function LoginPage() {
                         <Link className={'mb-[35px] text-theme font-normal text-[16px] block'} href={'/password-forgotten'}>رمز عبور خود را فراموش کرده ام.</Link>
                         <ImageValidationInputComponent />
                         <div className={'flex items-center gap-[10px] mb-[50px]'}>
-                            <input required className={'w-[20px] h-[20px] rounded-[10px] accent-theme'} type="checkbox" id={'remember-me-checkbox'} name={'remember-me-checkbox'}/>
+                            <input className={'w-[20px] h-[20px] rounded-[10px] accent-theme'} type="checkbox" id={'remember-me-checkbox'} name={'remember-me-checkbox'}/>
                             <label className={'text-theme font-normal text-[16px]'} htmlFor="remember-me-checkbox">مرا به خاطر بسپار</label>
                         </div>
                         <button className={'p-[20px] rounded-[10px] bg-theme text-darkBlue text-[18px] font-bold text-center truncate w-full'}>ورود</button>
