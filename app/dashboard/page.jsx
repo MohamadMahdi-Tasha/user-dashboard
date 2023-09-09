@@ -1,12 +1,12 @@
 // Importing Part
-import DashboardNavBar from '@/component/dashboard/nav/dashboardNavBar';
+import DashboardPageComponent from "@/component/dashboard/dashboardPageComponent";
 
 // Creating And Exporting Dashboard Page As Default
 export default function DashboardPage() {
     // Returning JSX
     return (
-        <div>
-            <DashboardNavBar />
-        </div>
+        <DashboardPageComponent>
+            <h1>jaskdjkasjdlj</h1>
+        </DashboardPageComponent>
     );
 }

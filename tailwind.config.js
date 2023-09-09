@@ -6,6 +6,7 @@ module.exports = {
       './app/**/**/*.{js,jsx}',
       './component/*.{js,jsx}',
       './component/**/*.{js,jsx}',
+      './component/**/**/*.{js,jsx}',
       './chunk/*.{js,jsx}',
       './chunk/**/*.{js,jsx}',
   ],
