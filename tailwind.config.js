@@ -4,9 +4,10 @@ module.exports = {
       './app/*.{js,jsx}',
       './app/**/*.{js,jsx}',
       './app/**/**/*.{js,jsx}',
-      './components/*.{js,jsx}',
-      './components/**/*.{js,jsx}',
-      './chunks/*.{js,jsx}',
+      './component/*.{js,jsx}',
+      './component/**/*.{js,jsx}',
+      './chunk/*.{js,jsx}',
+      './chunk/**/*.{js,jsx}',
   ],
   theme: {
       extend: {

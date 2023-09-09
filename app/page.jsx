@@ -1,3 +1,6 @@
+// Defining Title Of Page
+export const metadata = {title: 'داشبورد کاربر - خانه'}
+
 // Creating And Exporting Home Page As Default
 export default function HomePage() {
     // Returning JSX
