@@ -2,12 +2,12 @@
 import Link from "next/link";
 
 // Creating And Exporting Dashboard Pages Header In Main Side As Default
-export default function DashboardMainHeaderComponent() {
+export default function DashboardMainHeaderComponent({onClickOfShowNavBtn}) {
     // Returning JSX
     return (
         <header className={'flex items-center justify-between flex-wrap gap-[20px] mb-[30px]'}>
             <div className={'flex gap-[10px]'}>
-                <button className={'bg-darkBlue/30 rounded-[10px] w-[35px] lg:hidden flex items-center justify-center'}>
+                <button onClick={onClickOfShowNavBtn} className={'bg-darkBlue/30 rounded-[10px] w-[35px] lg:hidden flex items-center justify-center'}>
                     <span className={'bi bi-list text-white'} />
                 </button>
                 <Link href={'/dashboard/money'}>
