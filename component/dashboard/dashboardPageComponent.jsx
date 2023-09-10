@@ -2,7 +2,7 @@
 'use client';
 
 // Importing Part
-import {useState} from "react";
+import {useState, useEffect} from "react";
 import DashboardNavBar from "@/component/dashboard/nav/dashboardNavBar";
 import HolderComponent from "@/chunk/holderComponent";
 import DashboardMainHeaderComponent from "@/component/dashboard/dashboardMainHeaderComponent";
@@ -12,9 +12,13 @@ import Link from "next/link";
 export default function DashboardPageComponent({children}) {
     // Setting States Of Component
     const [isNavOpened, setNavOpened] = useState(false);
+    const [isUserLoggedIn, setUserLoggedIn] = useState();
+
+    // Checking If User Is Logged In
+    useEffect(() => setUserLoggedIn(localStorage.getItem('user-logged-in') === 'true'), [])
 
     // Conditional Rendering
-    if (localStorage.getItem('user-logged-in') === 'true') {
+    if (isUserLoggedIn) {
         return (
             <section className={'flex lg:flex-row flex-col gap-[20px] h-[100vh] bg-darkBlue'}>
                 <DashboardNavBar isOpened={isNavOpened} closeFunction={() => setNavOpened(false)} />
