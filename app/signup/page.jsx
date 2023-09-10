@@ -34,7 +34,7 @@ export default function SignUpPage() {
                         <InputWithLabelComponent id={'username'} label={'نام کاربری'} type={'text'} required={true} />
                         <InputWithLabelComponent id={'email'} label={'ایمیل'} type={'email'} required={true} />
                         <InputWithLabelComponent id={'password'} label={'رمز عبور'} type={'password'} required={true} />
-                        <InputWithLabelComponent id={'password'} label={'تکرار رمز عبور'} type={'password'} required={true} />
+                        <InputWithLabelComponent id={'password-repeat'} label={'تکرار رمز عبور'} type={'password'} required={true} />
                         <ImageValidationInputComponent />
                         <div className={'flex items-center gap-[10px] mb-[50px]'}>
                             <input required className={'w-[20px] h-[20px] rounded-[10px] accent-theme'} type="checkbox" id={'accept-rules'} name={'accept-rules'}/>
