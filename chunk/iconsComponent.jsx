@@ -1,16 +1,16 @@
 // Creating And Exporting Icon Component As Default
-export default function IconsComponent({name, small, bgColor, fgColor}) {
+export default function IconsComponent({name, small = false, bgColor, fgColor}) {
     // Conditional Rendering
     if (small) {
         return (
-            <div>
-                <span className={`bi ${name}`} />
+            <div className={`${bgColor} w-[30px] h-[30px] flex justify-center items-center rounded-[10px]`}>
+                <span className={`bi ${name} ${fgColor} text-[12px]`} />
             </div>
         );
     } else {
         return (
-            <div>
-                <span className={`bi ${name}`} />
+            <div className={`${bgColor} w-[40px] h-[40px] flex justify-center items-center rounded-[10px]`}>
+                <span className={`bi ${name} ${fgColor} text-[16px]`} />
             </div>
         );
     }

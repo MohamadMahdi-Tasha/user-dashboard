@@ -5,10 +5,10 @@ import IconsComponent from "@/chunk/iconsComponent";
 export default function FeaturesComponent({title,icon,bgColor,fgColor,subtitle}) {
     // Returning JSX
     return (
-        <div>
+        <div className={'bg-white rounded-[20px] p-[20px] shadow-lg'}>
             <IconsComponent name={icon} bgColor={bgColor} fgColor={fgColor} />
-            <span>{title}</span>
-            <p>{subtitle}</p>
+            <span className={'my-[10px] block font-bold text-darkBlue text-[15px] truncate'}>{title}</span>
+            <p className={'truncate font-light text-darkBlue/80 text-[13px]'}>{subtitle}</p>
         </div>
     );
 }
