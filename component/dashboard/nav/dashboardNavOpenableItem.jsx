@@ -17,7 +17,7 @@ export default function DashboardNavOpenableItem({name, icon, link, children}) {
     // Returning JSX
     return (
         <li>
-            <div className={'flex items-center justify-between gap-[10px] duration-500 transition-all data-[opened="true"]:bg-white/30 rounded-t-[10px] overflow-hidden'} data-opened={isOpened}>
+            <div className={'flex items-center justify-between gap-[10px] duration-500 transition-all data-[opened="true"]:bg-white/30 rounded-t-[10px]'} data-opened={isOpened}>
                 <Link href={link} className={'w-[90%]'}>
                     <button data-active={(pathName === link)} tabIndex={-1} className={'flex items-center gap-[10px] py-[8px] px-[10px] rounded-[10px] hover:bg-white/20 w-full transition-all duration-500 relative data-[active="true"]:before:absolute data-[active="true"]:before:h-full data-[active="true"]:before:w-[5px] data-[active="true"]:before:bg-theme data-[active="true"]:before:left-full data-[active="true"]:before:top-0 data-[active="true"]:before:translate-x-[15px] data-[active="true"]:before:rounded-l-[20px]'}>
                         <span className={`bi ${icon} text-white font-[16px]`} />
@@ -30,7 +30,7 @@ export default function DashboardNavOpenableItem({name, icon, link, children}) {
             </div>
             {
                 (isOpened) ? (
-                    <ul className={'py-[20px] flex flex-col gap-[20px] bg-white/30 rounded-b-[10px]'}>
+                    <ul className={'flex flex-col bg-white/30 rounded-b-[10px] overflow-hidden'}>
                         {children}
                     </ul>
                 ) : false
