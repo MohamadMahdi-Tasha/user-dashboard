@@ -4,6 +4,9 @@ import Link from "next/link";
 import FeaturesComponent from "@/component/dashboard/featuresComponent";
 import IconsComponent from "@/chunk/iconsComponent";
 
+// Defining Title Of Page
+export const metadata = {title: 'داشبورد کاربر - داشبورد'}
+
 // Creating And Exporting Dashboard Page As Default
 export default function DashboardPage() {
     // Returning JSX

@@ -2,6 +2,7 @@
 'use client';
 
 // Importing Part
+import {useEffect} from "react";
 import {useRouter} from "next/navigation";
 
 // Defining Title Of Page
@@ -12,9 +13,15 @@ export default function HomePage() {
     // Defining Router Hook To Use Later
     const routerHook = useRouter();
 
-    if (localStorage.getItem('user-logged-in') === 'true') {
-        routerHook.push('/dashboard');
-    } else {
-        routerHook.push('/login');
-    }
+    // Using useEffect Hook To Redirect To Pages Based On User Status
+    useEffect(() => {
+        (localStorage.getItem('user-logged-in') === 'true')
+            ? routerHook.push('/dashboard')
+            : routerHook.push('/login')
+    }, [])
+
+    // Returning JSX
+    return (
+        <h1>Home Page</h1>
+    );
 }

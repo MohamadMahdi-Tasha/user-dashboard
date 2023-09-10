@@ -6,6 +6,9 @@ import {useState} from "react";
 import InputWithLabelComponent from "@/chunk/input/inputWithLabelComponent";
 import WelcomeMassageComponent from "@/component/welcomeMassageComponent";
 
+// Defining Title Of Page
+export const metadata = {title: 'داشبورد کاربر - بازگردانی رمز عبور'}
+
 // Creating And Exporting Password Forgotten Page As Default
 export default function passwordForgottenPage() {
     // Defining States Of Component
