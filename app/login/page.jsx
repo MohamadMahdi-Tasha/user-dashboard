@@ -1,5 +1,9 @@
+// Forcing NextJS To Render This Component As Client Side Component
+'use client';
+
 // Importing Part
 import Link from 'next/link';
+import {useRouter} from "next/navigation";
 import InputWithLabelComponent from "@/chunk/input/inputWithLabelComponent";
 import ImageValidationInputComponent from "@/chunk/input/imageValidationInputComponent";
 import NameAndLogoComponent from "@/component/nameAndLogoComponent";
@@ -10,13 +14,21 @@ export const metadata = {title: 'داشبورد کاربر - ورود'}
 
 // Creating And Exporting Login Page
 export default function LoginPage() {
+    // Defining useRouter Hook To Use Later
+    const routerHook = useRouter();
+
     // Returning JSX
     return (
         <div className={'flex lg:h-[100vh] lg:flex-row gap-[20px] flex-col bg-darkBlue/20'}>
             <div className={'lg:w-[50%] w-full overflow-auto'} dir={'ltr'}>
                 <div className={'p-[20px] max-w-[1000px] mx-auto'} dir={'rtl'}>
                     <WelcomeMassageComponent />
-                    <form action="#" className={'bg-white rounded-[20px] p-[20px] mb-[40px]'}>
+                    <form onSubmit={(event) => {
+                        event.preventDefault();
+
+                        localStorage.setItem('user-logged-in', 'true');
+                        routerHook.push('/dashboard');
+                    }} action="#" className={'bg-white rounded-[20px] p-[20px] mb-[40px]'}>
                         <h5 className={'text-center font-bold text-darkBlue text-[20px] mb-[20px]'}>ورود</h5>
                         <InputWithLabelComponent id={'username'} label={'نام کاربری'} type={'text'} required={true} />
                         <InputWithLabelComponent id={'password'} label={'رمز عبور'} type={'password'} required={true} />

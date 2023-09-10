@@ -2,3 +2,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/*Custome Styles*/
+input[type="number"].no-arrow::-webkit-outer-spin-button, input[type="number"].no-arrow::-webkit-inner-spin-button {@apply appearance-none;}

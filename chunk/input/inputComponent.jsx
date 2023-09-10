@@ -5,7 +5,7 @@
 import {useState} from "react";
 
 // Creating And Exporting Input Component As Default
-export default function InputComponent({type, required, name}) {
+export default function InputComponent({type, required, name, min, max}) {
     // Conditional Rendering
     if (type === 'password') {
         // Defining State Of Component
@@ -24,6 +24,16 @@ export default function InputComponent({type, required, name}) {
                     }
                 </button>
             </div>
+        );
+    } else if (type === 'number') {
+        return (
+            <input required={required}
+                   max={max}
+                   min={min}
+                   type='number'
+                   id={name}
+                   name={name}
+                   className={'bg-darkBlue/30 w-full p-[15px] appearance-none no-arrow rounded-[10px] outline-0 border border-darkBlue focus:bg-darkBlue/40 transition-all duration-500 text-darkBlue'}/>
         );
     } else {
         return (
