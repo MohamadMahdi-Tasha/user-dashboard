@@ -11,9 +11,9 @@ export const metadata = {title: 'داشبورد کاربر - ثبت نام'}
 export default function SignUpPage() {
     // Returning JSX
     return (
-        <div className={'flex lg:h-[100vh] lg:flex-row gap-[20px] flex-col bg-darkBlue/20'}>
+        <div className={'flex lg:h-[100vh] lg:flex-row gap-[20px] flex-col-reverse bg-darkBlue/20'}>
             <NameAndLogoComponent rounded={'left'} />
-            <div className={'overflow-auto w-[50%]'}>
+            <div className={'overflow-auto lg:w-[50%] w-full'}>
                 <div className={'p-[20px] max-w-[1000px] mx-auto'} >
                     <h1 className={'text-center font-normal text-darkBlue text-[25px] mb-[20px]'}>
                         به
@@ -33,6 +33,7 @@ export default function SignUpPage() {
                     <form action="#" className={'bg-white rounded-[20px] p-[20px] mb-[40px]'}>
                         <h5 className={'text-center font-bold text-darkBlue text-[20px] mb-[20px]'}>ثبت نام</h5>
                         <InputWithLabelComponent id={'username'} label={'نام کاربری'} type={'text'} required={true} />
+                        <InputWithLabelComponent id={'email'} label={'ایمیل'} type={'email'} required={true} />
                         <InputWithLabelComponent id={'password'} label={'رمز عبور'} type={'password'} required={true} />
                         <InputWithLabelComponent id={'password'} label={'تکرار رمز عبور'} type={'password'} required={true} />
                         <ImageValidationInputComponent />
