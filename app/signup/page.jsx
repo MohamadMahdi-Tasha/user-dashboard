@@ -9,9 +9,6 @@ import NameAndLogoComponent from "@/component/nameAndLogoComponent";
 import WelcomeMassageComponent from "@/component/welcomeMassageComponent";
 import {useRouter} from "next/navigation";
 
-// Defining Title Of Page
-export const metadata = {title: 'داشبورد کاربر - ثبت نام'}
-
 // Creating And Exporting Sign Up Page
 export default function SignUpPage() {
     // Defining useRouter Hook To Use Later
@@ -20,6 +17,7 @@ export default function SignUpPage() {
     // Returning JSX
     return (
         <div className={'flex lg:h-[100vh] lg:flex-row gap-[20px] flex-col-reverse bg-darkBlue/20'}>
+            <title>داشبورد کاربر - ثبت نام</title>
             <NameAndLogoComponent rounded={'left'} />
             <div className={'overflow-auto lg:w-[50%] w-full'}>
                 <div className={'p-[20px] max-w-[1000px] mx-auto'} >

@@ -6,9 +6,6 @@ import {useState} from "react";
 import InputWithLabelComponent from "@/chunk/input/inputWithLabelComponent";
 import WelcomeMassageComponent from "@/component/welcomeMassageComponent";
 
-// Defining Title Of Page
-export const metadata = {title: 'داشبورد کاربر - بازگردانی رمز عبور'}
-
 // Creating And Exporting Password Forgotten Page As Default
 export default function passwordForgottenPage() {
     // Defining States Of Component
@@ -17,6 +14,7 @@ export default function passwordForgottenPage() {
     // Returning JSX
     return (
         <div className={'bg-darkBlue/30 h-[100vh] overflow-auto p-[20px]'}>
+            <title>داشبورد کاربر - بازگردانی رمز عبور</title>
             <div className={'max-w-[500px] mx-auto'}>
                 <WelcomeMassageComponent />
                 <form noValidate={(isFormSubmited)} onSubmit={(event) => {

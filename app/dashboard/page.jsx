@@ -4,14 +4,12 @@ import Link from "next/link";
 import FeaturesComponent from "@/component/dashboard/featuresComponent";
 import IconsComponent from "@/chunk/iconsComponent";
 
-// Defining Title Of Page
-export const metadata = {title: 'داشبورد کاربر - داشبورد'}
-
 // Creating And Exporting Dashboard Page As Default
 export default function DashboardPage() {
     // Returning JSX
     return (
         <DashboardPageComponent>
+            <title>داشبورد کاربر - داشبورد</title>
             <div className={'grid lg:grid-cols-5 gap-[10px] lg:mb-[20px] mb-[30px]'}>
                 <FeaturesComponent icon={'bi-server'} title={'سرور ابری'} fgColor={'text-white'} bgColor={'bg-orange-500'} subtitle={'ساخت و مدیریت سرور های ابری'} />
                 <FeaturesComponent icon={'bi-cloud-download'} title={'توزیع ابری'} fgColor={'text-white'} bgColor={'bg-teal-500'} subtitle={'امنیت ابری'} />
