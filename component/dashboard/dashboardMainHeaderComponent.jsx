@@ -5,9 +5,9 @@ import Link from "next/link";
 export default function DashboardMainHeaderComponent({onClickOfShowNavBtn}) {
     // Returning JSX
     return (
-        <header className={'flex items-center justify-between flex-wrap gap-[20px] mb-[30px]'}>
-            <div className={'flex gap-[10px]'}>
-                <button onClick={onClickOfShowNavBtn} className={'bg-darkBlue/30 rounded-[10px] w-[35px] lg:hidden flex items-center justify-center'}>
+        <header className={'flex items-center justify-between flex-wrap gap-[20px] lg:mb-[30px] mb-[20px]'}>
+            <div className={'flex flex-wrap gap-[10px]'}>
+                <button onClick={onClickOfShowNavBtn} className={'bg-darkBlue/30 aspect-square rounded-[10px] w-[35px] lg:hidden flex items-center justify-center'}>
                     <span className={'bi bi-list text-white'} />
                 </button>
                 <Link href={'/dashboard/money'}>
@@ -18,7 +18,7 @@ export default function DashboardMainHeaderComponent({onClickOfShowNavBtn}) {
                     </button>
                 </Link>
             </div>
-            <div className={'flex gap-[30px]'}>
+            <div className={'lg:flex hidden gap-[30px]'}>
                 <Link className={'block'} href={'/dashboard/support'}><button className={'bg-darkBlue/30 h-full rounded-[10px] aspect-square'} tabIndex={-1}><span className={'bi bi-headphones text-white'} /></button></Link>
                 <Link className={'block'} href={'/dashboard/notifications'}><button className={'bg-darkBlue/30 h-full rounded-[10px] aspect-square'} tabIndex={-1}><span className={'bi bi-bell text-white'} /></button></Link>
                 <Link href={'/dashboard/profile'}>

@@ -22,7 +22,7 @@ export default function DashboardPageComponent({children}) {
         return (
             <section className={'flex lg:flex-row flex-col lg:gap-[20px] h-[100vh] bg-darkBlue'}>
                 <DashboardNavBar isOpened={isNavOpened} closeFunction={() => setNavOpened(false)} />
-                <main className={'p-[20px] bg-white/50 lg:w-[80vw] w-full lg:h-full h-[750px] overflow-auto'}>
+                <main className={'lg:p-[20px] p-[15px] bg-white/50 lg:w-[80vw] w-full lg:h-full h-[750px] overflow-auto'}>
                     <HolderComponent>
                         <DashboardMainHeaderComponent onClickOfShowNavBtn={() => setNavOpened(true)} />
                         {children}

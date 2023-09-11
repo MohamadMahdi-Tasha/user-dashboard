@@ -3,8 +3,8 @@ export default function WelcomeMassageComponent() {
     // Returning JSX
     return (
         <div className={'mb-[30px]'}>
-            <h1 className={'text-center font-bold text-theme text-[25px] mb-[20px]'}>PHOENIX SERVER</h1>
-            <h2 className={'text-darkBlue font-normal text-[20px] text-center'}>
+            <h1 className={'text-center font-bold text-theme lg:text-[25px] text-[20px] mb-[20px]'}>PHOENIX SERVER</h1>
+            <h2 className={'text-darkBlue font-normal lg:text-[20px] text-[16px] text-center'}>
                 ارائه ی
                 <span className={'font-bold break-after-avoid'}> پنــل قدرتمنــد </span>
                 ابـری با
