@@ -20,7 +20,7 @@ export default function BreadcrumbComponent() {
             </div>
             {
                 slicedRoutes.map((route,index) => (
-                    <div className={'flex items-center gap-[10px]'}>
+                    <div key={index} className={'flex items-center gap-[10px]'}>
                         <span className={'block text-darkBlue/70 font-light lg:text-[14px] text-[12px]'}>
                             {
                                 (route === 'dashboard')
