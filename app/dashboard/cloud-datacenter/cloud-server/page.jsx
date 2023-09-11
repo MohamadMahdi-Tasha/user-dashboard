@@ -1,6 +1,7 @@
 // Importing Part
 import DashboardPageComponent from "@/component/dashboard/dashboardPageComponent";
 import BreadcrumbComponent from "@/chunk/breadcrumbComponent";
+import Link from "next/link";
 
 // Creating And Exporting Cloud Servers Page As Default
 export default function CloudServersPage() {
@@ -16,11 +17,13 @@ export default function CloudServersPage() {
                         <h4 className={'text-darkBlue/70 font-normal text-[14px]'}>در این بخش میتوانید لیست سرور های ابری خود را مشاهده کرده و گروه ایجاد کنید.</h4>
                     </div>
                     <div className={'flex lg:flex-row flex-col gap-[10px] lg:w-auto w-full'}>
-                        <button className={'lg:text-[16px] text-[14px] lg:w-auto w-full px-[20px] text-center py-[10px] bg-darkBlue/80 text-white rounded-[10px] truncate'}>لیست پروژه ها</button>
-                        <button className={'lg:text-[16px] text-[14px] lg:w-auto w-full px-[20px] py-[10px] bg-theme text-white rounded-[10px] flex items-center justify-center gap-[10px]'}>
-                            <span className={'bi bi-plus-circle'} />
-                            <span className={'truncate'}>ایجاد سرور ابری</span>
-                        </button>
+                        <Link href={'/dashboard/cloud-datacenter/cloud-server/projects'}><button className={'lg:text-[16px] text-[14px] lg:w-auto w-full px-[20px] text-center py-[10px] bg-darkBlue/80 text-white rounded-[10px] truncate'}>لیست پروژه ها</button></Link>
+                        <Link href={'/dashboard/cloud-datacenter/cloud-server/new'}>
+                            <button className={'lg:text-[16px] text-[14px] lg:w-auto w-full px-[20px] py-[10px] bg-theme text-white rounded-[10px] flex items-center justify-center gap-[10px]'}>
+                                <span className={'bi bi-plus-circle'} />
+                                <span className={'truncate'}>ایجاد سرور ابری</span>
+                            </button>
+                        </Link>
                     </div>
                 </div>
                 <div className={'flex lg:flex-row flex-col flex-wrap mb-[20px] gap-[20px]'}>

@@ -22,24 +22,32 @@ export default function DashboardNavBar({isOpened, closeFunction}) {
                 <ul className={'p-[20px] gap-[10px] flex flex-col'}>
                     <DashboardNavBarItem link={'/dashboard'} name={'داشبورد'} icon={'bi-house'} />
                     <DashboardNavBarItem link={'/dashboard/hosts'} name={'دامنه ها'} icon={'bi-cloud-download'} />
-                    <DashboardNavOpenableItem link={'/dashboard/cloud-datacenter/cloud-server'} name={'دیتاسنتر ابری'} icon={'bi bi-building'}>
+                    <DashboardNavOpenableItem
+                        link={'/dashboard/cloud-datacenter/cloud-server'}
+                        links={['/dashboard/cloud-datacenter/cloud-server', '/dashboard/cloud-datacenter/cloud-switch', '/dashboard/cloud-datacenter/cloud-server/new']}
+                        name={'دیتاسنتر ابری'}
+                        icon={'bi bi-building'}>
                         <li>
                             <Link href={'/dashboard/cloud-datacenter/cloud-server'}>
-                                <button className={'hover:bg-white/30 py-[8px] pl-[10px] pr-[30px] transition-all duration-500 text-white truncate w-full text-start'} tabIndex={-1}>
+                                <button
+                                    className={'hover:bg-white/30 py-[8px] pl-[10px] pr-[30px] transition-all duration-500 text-white truncate w-full text-start'}
+                                    tabIndex={-1}>
                                     سرور ابری
                                 </button>
                             </Link>
                         </li>
                         <li>
                             <Link href={'/dashboard/cloud-datacenter/cloud-switch'}>
-                                <button className={'hover:bg-white/30 py-[8px] pl-[10px] pr-[30px] transition-all duration-500 text-white truncate w-full text-start'} tabIndex={-1}>
+                                <button
+                                    className={'hover:bg-white/30 py-[8px] pl-[10px] pr-[30px] transition-all duration-500 text-white truncate w-full text-start'}
+                                    tabIndex={-1}>
                                     سوویچ ابری
                                 </button>
                             </Link>
                         </li>
                     </DashboardNavOpenableItem>
                     <DashboardNavBarItem link={'/dashboard/cloud-distribution'} name={'توزیع ابری'} icon={'bi-asterisk'} />
-                    <DashboardNavOpenableItem link={'/dashboard/cloud-safety'} name={'امنیت ابری'} icon={'bi bi-shield'}>
+                    <DashboardNavOpenableItem link={'/dashboard/cloud-safety'} links={['/dashboard/cloud-safety']} name={'امنیت ابری'} icon={'bi bi-shield'}>
                         <li>
                             <Link href={'/dashboard/cloud-datacenter/cloud-server'}>
                                 <button className={'hover:bg-white/30 py-[8px] pl-[10px] pr-[30px] transition-all duration-500 text-white truncate w-full text-start'} tabIndex={-1}>
@@ -55,7 +63,7 @@ export default function DashboardNavBar({isOpened, closeFunction}) {
                             </Link>
                         </li>
                     </DashboardNavOpenableItem>
-                    <DashboardNavOpenableItem link={'/dashboard/money'} name={'مالی'} icon={'bi bi-wallet'}>
+                    <DashboardNavOpenableItem link={'/dashboard/money'} links={['/dashboard/money']} name={'مالی'} icon={'bi bi-wallet'}>
                         <li>
                             <Link href={'/dashboard/cloud-datacenter/cloud-server'}>
                                 <button className={'hover:bg-white/30 py-[8px] pl-[10px] pr-[30px] transition-all duration-500 text-white truncate w-full text-start'} tabIndex={-1}>

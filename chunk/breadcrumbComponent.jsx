@@ -29,7 +29,9 @@ export default function BreadcrumbComponent() {
                                         ? 'دیتا سنتر ابری'
                                         : (route === 'cloud-server')
                                             ? 'سرور ابری'
-                                            : ''
+                                            : (route === 'new')
+                                                ? 'ایجاد سرور'
+                                                : ''
                             }
                         </span>
                         {
