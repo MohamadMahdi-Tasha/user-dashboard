@@ -24,7 +24,7 @@ export default function DashboardMainHeaderComponent({onClickOfShowNavBtn}) {
                 <Link href={'/dashboard/profile'}>
                     <button className={'px-[10px] py-[5px] bg-darkBlue/30 text-white flex items-center rounded-[10px] gap-[10px] transition-all duration-500'} tabIndex={-1}>
                         <span className={'bi bi-person'} />
-                        <span>محمد مهدی تاشا</span>
+                        <span className={'text-[14px]'}>محمد مهدی تاشا</span>
                         <span className={'bi bi-chevron-down'} />
                     </button>
                 </Link>

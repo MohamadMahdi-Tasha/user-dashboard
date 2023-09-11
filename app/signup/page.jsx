@@ -6,7 +6,6 @@ import Link from 'next/link';
 import InputWithLabelComponent from "@/chunk/input/inputWithLabelComponent";
 import ImageValidationInputComponent from "@/chunk/input/imageValidationInputComponent";
 import NameAndLogoComponent from "@/component/nameAndLogoComponent";
-import WelcomeMassageComponent from "@/component/welcomeMassageComponent";
 import {useRouter} from "next/navigation";
 import {useState, useEffect} from "react";
 
@@ -29,7 +28,9 @@ export default function SignUpPage() {
                 <NameAndLogoComponent />
                 <div className={'overflow-auto lg:w-[50%] w-full'}>
                     <div className={'lg:p-[20px] p-[15px] max-w-[1000px] mx-auto'} >
-                        <WelcomeMassageComponent />
+                        <div className={'mb-[30px]'}>
+                            <h1 className={'text-center font-bold text-theme lg:text-[25px] text-[20px] mb-[20px]'}>PHOENIX SERVER</h1>
+                        </div>
                         <h1 className={'text-center text-theme lg:text-[18px] text-[16px] font-bold'}>شما هم اکنون وارد شده اید</h1>
                     </div>
                 </div>
@@ -42,14 +43,15 @@ export default function SignUpPage() {
                 <NameAndLogoComponent />
                 <div className={'overflow-auto lg:w-[50%] w-full'}>
                     <div className={'lg:p-[20px] p-[15px] max-w-[1000px] mx-auto'} >
-                        <WelcomeMassageComponent />
+                        <div className={'mb-[30px]'}>
+                            <h1 className={'text-center font-bold text-theme lg:text-[25px] text-[20px] mb-[20px]'}>PHOENIX SERVER</h1>
+                        </div>
                         <form onSubmit={(event) => {
                             event.preventDefault();
 
                             localStorage.setItem('user-logged-in', 'true');
                             routerHook.push('/dashboard');
                         }} action="#" className={'bg-white rounded-[20px] lg:p-[20px] p-[15px] mb-[40px]'}>
-                            <h5 className={'text-center font-bold text-darkBlue lg:text-[20px] text-[18px] lg:mb-[20px] mb-[15px]'}>ثبت نام</h5>
                             <InputWithLabelComponent id={'username'} label={'نام کاربری'} type={'text'} required={true} />
                             <InputWithLabelComponent id={'email'} label={'ایمیل'} type={'email'} required={true} />
                             <InputWithLabelComponent id={'password'} label={'رمز عبور'} type={'password'} required={true} />
@@ -65,7 +67,7 @@ export default function SignUpPage() {
                                     و استفاده را مطالعه نمودم و پذیرفتم
                                 </label>
                             </div>
-                            <button className={'lg:p-[20px] p-[10px] rounded-[10px] bg-theme text-darkBlue lg:text-[18px] text-[14px] font-bold text-center truncate w-full'}>ثبت نام</button>
+                            <button className={'lg:p-[20px] p-[10px] rounded-[10px] bg-theme text-white lg:text-[18px] text-[14px] font-bold text-center truncate w-full'}>ثبت نام</button>
                         </form>
                         <h6 className={'text-center font-normal text-darkBlue lg:text-[18px] text-[16px]'}>
                             حساب کاربری دارید؟

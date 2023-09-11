@@ -14,7 +14,7 @@
 .bi::before,
 [class^="bi-"]::before,
 [class*=" bi-"]::before {
-    display: inline-block;
+    display: block;
     font-family: bootstrap-icons !important;
     /*font-style: normal;*/
     font-weight: normal !important;
