@@ -37,15 +37,29 @@ export default function CloudServersPage() {
                 <div className={'overflow-auto w-full mb-[20px]'}>
                     <table className={'w-full lg:rounded-[20px] rounded-[15px] overflow-hidden'}>
                         <thead className={'bg-gray-200'}>
-                        <tr>
-                            <td className={'lg:py-[15px] lg:px-[20px] py-[15px] px-[15px] text-center truncate lg:text-[16px] text-[12px] font-light text-darkBlue'}>ردیف</td>
-                            <td className={'lg:py-[15px] lg:px-[20px] py-[15px] px-[15px] text-center truncate lg:text-[16px] text-[12px] font-light text-darkBlue'}>نام سرور</td>
-                            <td className={'lg:py-[15px] lg:px-[20px] py-[15px] px-[15px] text-center truncate lg:text-[16px] text-[12px] font-light text-darkBlue'}>سیستم عامل</td>
-                            <td className={'lg:py-[15px] lg:px-[20px] py-[15px] px-[15px] text-center truncate lg:text-[16px] text-[12px] font-light text-darkBlue'}>ادرس IP</td>
-                            <td className={'lg:py-[15px] lg:px-[20px] py-[15px] px-[15px] text-center truncate lg:text-[16px] text-[12px] font-light text-darkBlue'}>وضعیت</td>
-                            <td className={'lg:py-[15px] lg:px-[20px] py-[15px] px-[15px] text-center truncate lg:text-[16px] text-[12px] font-light text-darkBlue'}>پروژه</td>
-                        </tr>
+                            <tr>
+                                <td className={'lg:py-[15px] lg:px-[20px] py-[15px] px-[15px] text-center truncate lg:text-[16px] text-[12px] font-light text-darkBlue'}>ردیف</td>
+                                <td className={'lg:py-[15px] lg:px-[20px] py-[15px] px-[15px] text-center truncate lg:text-[16px] text-[12px] font-light text-darkBlue'}>نام سرور</td>
+                                <td className={'lg:py-[15px] lg:px-[20px] py-[15px] px-[15px] text-center truncate lg:text-[16px] text-[12px] font-light text-darkBlue'}>سیستم عامل</td>
+                                <td className={'lg:py-[15px] lg:px-[20px] py-[15px] px-[15px] text-center truncate lg:text-[16px] text-[12px] font-light text-darkBlue'}>ادرس IP</td>
+                                <td className={'lg:py-[15px] lg:px-[20px] py-[15px] px-[15px] text-center truncate lg:text-[16px] text-[12px] font-light text-darkBlue'}>وضعیت</td>
+                                <td className={'lg:py-[15px] lg:px-[20px] py-[15px] px-[15px] text-center truncate lg:text-[16px] text-[12px] font-light text-darkBlue'}>پروژه</td>
+                            </tr>
                         </thead>
+                        <tbody>
+                            <tr>
+                                <td className={'lg:py-[15px] lg:px-[20px] py-[15px] px-[15px] text-center truncate lg:text-[16px] text-[12px] font-light text-darkBlue'}>1</td>
+                                <td className={'lg:py-[15px] lg:px-[20px] py-[15px] px-[15px] text-center truncate lg:text-[16px] text-[12px] font-light text-darkBlue'}>ffff</td>
+                                <td className={'lg:py-[15px] lg:px-[20px] py-[15px] px-[15px] text-center truncate lg:text-[16px] text-[12px] font-light text-darkBlue'}>Ubuntu</td>
+                                <td className={'lg:py-[15px] lg:px-[20px] py-[15px] px-[15px] text-center truncate lg:text-[16px] text-[12px] font-light text-darkBlue'}>193.151.140.97</td>
+                                <td className={'lg:py-[15px] lg:px-[20px] py-[15px] px-[15px] text-center truncate lg:text-[16px] text-[12px] font-light text-darkBlue'}><span className={'bg-green-200 px-[10px] py-[10px] text-[14px] font-normal rounded-[10px] text-green-500'}>روشن</span></td>
+                                <td className={'lg:py-[15px] lg:px-[20px] py-[15px] px-[15px] flex justify-center items-center truncate lg:text-[16px] text-[12px] font-light text-darkBlue'}>
+                                    <Link href={'/dashboard/cloud-data-center/server/1'} className={'w-[30px] h-[30px] bg-darkBlue/30 rounded-[10px] flex justify-center items-center'}>
+                                        <span className={'bi bi-three-dots-vertical'} />
+                                    </Link>
+                                </td>
+                            </tr>
+                        </tbody>
                     </table>
                 </div>
                 <span className={'text-center lg:text-[18px] text-[14px] font-normal text-darkBlue block'}>موردی برای نمایش یافت نشد.</span>
