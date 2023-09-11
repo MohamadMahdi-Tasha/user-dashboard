@@ -13,15 +13,15 @@ export default function BreadcrumbComponent() {
 
     // Returning JSX
     return (
-        <div>
-            <div>
-                <span>فونیکس سرور</span>
-                <span className={'bi bi-chevron-left'} />
+        <div className={'flex flex-wrap items-center gap-[10px]'}>
+            <div className={'flex items-center gap-[10px]'}>
+                <span className={'block text-darkBlue/70 font-light text-[14px]'}>فونیکس سرور</span>
+                <span className={'bi bi-chevron-left block text-darkBlue/70 font-light text-[14px]'} />
             </div>
             {
                 slicedRoutes.map((route,index) => (
-                    <div>
-                        <span>
+                    <div className={'flex items-center gap-[10px]'}>
+                        <span className={'block text-darkBlue/70 font-light text-[14px]'}>
                             {
                                 (route === 'dashboard')
                                     ? 'داشبورد'
@@ -35,7 +35,7 @@ export default function BreadcrumbComponent() {
                         {
                             (index + 1 === slicedRoutes.length)
                                 ? false
-                                : <span className={'bi bi-chevron-left'} />
+                                : <span className={'bi bi-chevron-left block text-darkBlue/70 font-light text-[14px]'} />
                         }
                     </div>
                 ))
