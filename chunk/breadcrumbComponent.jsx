@@ -15,13 +15,13 @@ export default function BreadcrumbComponent() {
     return (
         <div className={'flex flex-wrap items-center gap-[10px]'}>
             <div className={'flex items-center gap-[10px]'}>
-                <span className={'block text-darkBlue/70 font-light text-[14px]'}>فونیکس سرور</span>
+                <span className={'block text-darkBlue/70 font-light lg:text-[14px] text-[12px]'}>فونیکس سرور</span>
                 <span className={'bi bi-chevron-left block text-darkBlue/70 font-light text-[14px]'} />
             </div>
             {
                 slicedRoutes.map((route,index) => (
                     <div className={'flex items-center gap-[10px]'}>
-                        <span className={'block text-darkBlue/70 font-light text-[14px]'}>
+                        <span className={'block text-darkBlue/70 font-light lg:text-[14px] text-[12px]'}>
                             {
                                 (route === 'dashboard')
                                     ? 'داشبورد'
