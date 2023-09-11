@@ -54,7 +54,19 @@ export default function CloudServersPage() {
                                 <td className={'lg:py-[15px] lg:px-[20px] py-[15px] px-[15px] text-center truncate lg:text-[16px] text-[12px] font-light text-darkBlue'}>193.151.140.97</td>
                                 <td className={'lg:py-[15px] lg:px-[20px] py-[15px] px-[15px] text-center truncate lg:text-[16px] text-[12px] font-light text-darkBlue'}><span className={'bg-green-200 px-[10px] py-[10px] text-[14px] font-normal rounded-[10px] text-green-500'}>روشن</span></td>
                                 <td className={'lg:py-[15px] lg:px-[20px] py-[15px] px-[15px] flex justify-center items-center truncate lg:text-[16px] text-[12px] font-light text-darkBlue'}>
-                                    <Link href={'/dashboard/cloud-data-center/server/1'} className={'w-[30px] h-[30px] bg-darkBlue/30 rounded-[10px] flex justify-center items-center'}>
+                                    <Link href={'/dashboard/cloud-datacenter/server/1'} className={'w-[30px] h-[30px] bg-darkBlue/30 rounded-[10px] flex justify-center items-center'}>
+                                        <span className={'bi bi-three-dots-vertical'} />
+                                    </Link>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td className={'lg:py-[15px] lg:px-[20px] py-[15px] px-[15px] text-center truncate lg:text-[16px] text-[12px] font-light text-darkBlue'}>1</td>
+                                <td className={'lg:py-[15px] lg:px-[20px] py-[15px] px-[15px] text-center truncate lg:text-[16px] text-[12px] font-light text-darkBlue'}>ffff</td>
+                                <td className={'lg:py-[15px] lg:px-[20px] py-[15px] px-[15px] text-center truncate lg:text-[16px] text-[12px] font-light text-darkBlue'}>Ubuntu</td>
+                                <td className={'lg:py-[15px] lg:px-[20px] py-[15px] px-[15px] text-center truncate lg:text-[16px] text-[12px] font-light text-darkBlue'}>193.151.140.97</td>
+                                <td className={'lg:py-[15px] lg:px-[20px] py-[15px] px-[15px] text-center truncate lg:text-[16px] text-[12px] font-light text-darkBlue'}><span className={'bg-green-200 px-[10px] py-[10px] text-[14px] font-normal rounded-[10px] text-green-500'}>روشن</span></td>
+                                <td className={'lg:py-[15px] lg:px-[20px] py-[15px] px-[15px] flex justify-center items-center truncate lg:text-[16px] text-[12px] font-light text-darkBlue'}>
+                                    <Link href={'/dashboard/cloud-datacenter/server/1'} className={'w-[30px] h-[30px] bg-darkBlue/30 rounded-[10px] flex justify-center items-center'}>
                                         <span className={'bi bi-three-dots-vertical'} />
                                     </Link>
                                 </td>
@@ -62,7 +74,6 @@ export default function CloudServersPage() {
                         </tbody>
                     </table>
                 </div>
-                <span className={'text-center lg:text-[18px] text-[14px] font-normal text-darkBlue block'}>موردی برای نمایش یافت نشد.</span>
             </div>
         </DashboardPageComponent>
     );
