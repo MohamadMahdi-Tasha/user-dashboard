@@ -33,7 +33,7 @@ export default function createServerPage() {
                     <div className={'data-[active="true"]:block data-[active="false"]:hidden'} data-active={(currentStep === 1)}>
                         <h4 className={'text-[16px] font-bold text-darkBlue mb-[10px]'}>انتخواب دیتاسنتر</h4>
                         <h6 className={'text-[14px] font-normal text-darkBlue/80 mb-[20px]'}>دیتاسنتر مورد نظر خود را انتحواب کنید.</h6>
-                        <div className={'grid grid-cols-4 gap-x-[10px] gap-y-[30px] mb-[20px]'}>
+                        <div className={'grid lg:grid-cols-4 grid-cols-2 gap-x-[10px] gap-y-[30px] mb-[20px]'}>
                             <button onClick={() => setDataCenter('تهران')} data-selected={(dataCenter === 'تهران')} className={'selectable-button'}><span data-selected={(dataCenter === 'تهران')} className={'selectable-button-icon bi bi-check-circle-fill'} />تهران</button>
                             <button onClick={() => setDataCenter('تهران ۲و۳')} data-selected={(dataCenter === 'تهران ۲و۳')} className={'selectable-button'}><span data-selected={(dataCenter === 'تهران ۲و۳')} className={'selectable-button-icon bi bi-check-circle-fill'} />تهران ۲و۳</button>
                             <button onClick={() => setDataCenter('شیراز')} data-selected={(dataCenter === 'شیراز')} className={'selectable-button'}><span data-selected={(dataCenter === 'شیراز')} className={'selectable-button-icon bi bi-check-circle-fill'} />شیراز</button>
@@ -42,12 +42,12 @@ export default function createServerPage() {
                             <button onClick={() => setDataCenter('قم')} data-selected={(dataCenter === 'قم')} className={'selectable-button'}><span data-selected={(dataCenter === 'قم')} className={'selectable-button-icon bi bi-check-circle-fill'} />قم</button>
                             <button onClick={() => setDataCenter('همدان')} data-selected={(dataCenter === 'همدان')} className={'selectable-button'}><span data-selected={(dataCenter === 'همدان')} className={'selectable-button-icon bi bi-check-circle-fill'} />همدان</button>
                         </div>
-                        <div className={'flex items-end justify-end'}><button onClick={() => setCurrentStep(2)} data-active={(dataCenter !== '')} className={'px-[30px] py-[10px] bg-theme rounded-[10px] text-[14px] font-normal text-white data-[active="false"]:opacity-50 data-[active="false"]:pointer-events-none'} tabIndex={(dataCenter !== '') ? -1 : 1}>گام بعدی</button></div>
+                        <div className={'flex items-end justify-end'}><button onClick={() => setCurrentStep(2)} data-active={(dataCenter !== '')} className={'px-[30px] py-[10px] lg:w-auto w-full bg-theme rounded-[10px] text-[14px] font-normal text-white data-[active="false"]:opacity-50 data-[active="false"]:pointer-events-none'} tabIndex={(dataCenter !== '') ? -1 : 1}>گام بعدی</button></div>
                     </div>
                     <div className={'data-[active="true"]:block data-[active="false"]:hidden'} data-active={(currentStep === 2)}>
                         <h4 className={'text-[16px] font-bold text-darkBlue mb-[10px]'}>انتخواب سیستم عامل</h4>
                         <h6 className={'text-[14px] font-normal text-darkBlue/80 mb-[20px]'}>سیستم عامل مورد نظر خود را انتحواب کنید.</h6>
-                        <div className={'grid grid-cols-4 gap-x-[10px] gap-y-[30px] mb-[20px]'}>
+                        <div className={'grid lg:grid-cols-4 grid-cols-2 gap-x-[10px] gap-y-[30px] mb-[20px]'}>
                             <button onClick={() => setOs('almanliux os')} data-selected={(os === 'almanliux os')} className={'selectable-button'}>
                                 <span data-selected={(os === 'almanliux os')} className={'selectable-button-icon bi bi-check-circle-fill'} />
                                 <div className={'flex flex-col items-center justify-center gap-[20px]'}>
@@ -103,15 +103,15 @@ export default function createServerPage() {
                                 </div>
                             </button>
                         </div>
-                        <div className={'flex items-end justify-end gap-[20px] flex-wrap'}>
-                            <button onClick={() => setCurrentStep(1)} className={'px-[30px] py-[10px] bg-darkBlue rounded-[10px] text-[14px] font-normal text-white'}>گام قبلی</button>
-                            <button onClick={() => setCurrentStep(3)} data-active={(os !== '')} className={'px-[30px] py-[10px] bg-theme rounded-[10px] text-[14px] font-normal text-white data-[active="false"]:opacity-50 data-[active="false"]:pointer-events-none'} tabIndex={(os !== '') ? -1 : 1}>گام بعدی</button>
+                        <div className={'flex items-end justify-end lg:flex-row flex-col gap-[20px] flex-wrap'}>
+                            <button onClick={() => setCurrentStep(1)} className={'px-[30px] lg:w-auto w-full py-[10px] bg-darkBlue rounded-[10px] text-[14px] font-normal text-white'}>گام قبلی</button>
+                            <button onClick={() => setCurrentStep(3)} data-active={(os !== '')} className={'px-[30px] lg:w-auto w-full py-[10px] bg-theme rounded-[10px] text-[14px] font-normal text-white data-[active="false"]:opacity-50 data-[active="false"]:pointer-events-none'} tabIndex={(os !== '') ? -1 : 1}>گام بعدی</button>
                         </div>
                     </div>
                     <div className={'data-[active="true"]:block data-[active="false"]:hidden'} data-active={(currentStep === 3)}>
                         <h4 className={'text-[16px] font-bold text-darkBlue mb-[10px]'}>انتخواب منابع</h4>
                         <h6 className={'text-[14px] font-normal text-darkBlue/80 mb-[20px]'}>منابع مورد نیاز مورد نظر خود را انتحواب کنید.</h6>
-                        <div className={'bg-white p-[20px] rounded-[20px]'}>
+                        <div className={'bg-white rounded-[20px]'}>
                             <div className={'overflow-auto w-full mb-[20px]'}>
                                 <table className={'w-full lg:rounded-[20px] rounded-[15px] overflow-hidden'}>
                                     <thead className={'bg-gray-200'}>
@@ -163,15 +163,15 @@ export default function createServerPage() {
                                 </table>
                             </div>
                         </div>
-                        <div className={'flex items-end justify-end gap-[20px] flex-wrap'}>
-                            <button onClick={() => setCurrentStep(2)} className={'px-[30px] py-[10px] bg-darkBlue rounded-[10px] text-[14px] font-normal text-white'}>گام قبلی</button>
-                            <button onClick={() => setCurrentStep(4)} data-active={(isConfiged)} className={'px-[30px] py-[10px] bg-theme rounded-[10px] text-[14px] font-normal text-white data-[active="false"]:opacity-50 data-[active="false"]:pointer-events-none'} tabIndex={(isConfiged) ? 1 : -1}>گام بعدی</button>
+                        <div className={'flex items-end justify-end lg:flex-row flex-col gap-[20px] flex-wrap'}>
+                            <button onClick={() => setCurrentStep(2)} className={'px-[30px] lg:w-auto w-full py-[10px] bg-darkBlue rounded-[10px] text-[14px] font-normal text-white'}>گام قبلی</button>
+                            <button onClick={() => setCurrentStep(4)} data-active={(isConfiged)} className={'px-[30px] lg:w-auto w-full py-[10px] bg-theme rounded-[10px] text-[14px] font-normal text-white data-[active="false"]:opacity-50 data-[active="false"]:pointer-events-none'} tabIndex={(isConfiged) ? 1 : -1}>گام بعدی</button>
                         </div>
                     </div>
                     <div className={'data-[active="true"]:block data-[active="false"]:hidden'} data-active={(currentStep === 4)}>
                         <h4 className={'text-[16px] font-bold text-darkBlue mb-[10px]'}>بررسی و افزودن فضای ابری جدید</h4>
                         <h6 className={'text-[14px] font-normal text-darkBlue/80 mb-[20px]'}>سرویس مجازی ابری با تنظیمات و پیکر بندی زیر اماده ایجاد است.</h6>
-                        <p className={'block bg-theme/30 text-theme font-light text-[16px] p-[10px] rounded-[10px] mb-[20px]'}>
+                        <p className={'block bg-theme/30 text-theme font-light text-[14px] lg:text-[16px] p-[10px] rounded-[10px] mb-[20px]'}>
                             <span className={'bi bi-info-circle ml-[20px]'} />
                             مشترک گرامی به علت
                             <span className={'font-bold'}> حجم بالای درخواست ها </span>
