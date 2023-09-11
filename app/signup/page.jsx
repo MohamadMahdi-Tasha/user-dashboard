@@ -18,7 +18,7 @@ export default function SignUpPage() {
     return (
         <div className={'flex lg:h-[100vh] lg:flex-row gap-[20px] flex-col-reverse bg-darkBlue/20'}>
             <title>داشبورد کاربر - ثبت نام</title>
-            <NameAndLogoComponent rounded={'left'} />
+            <NameAndLogoComponent />
             <div className={'overflow-auto lg:w-[50%] w-full'}>
                 <div className={'p-[20px] max-w-[1000px] mx-auto'} >
                     <WelcomeMassageComponent />

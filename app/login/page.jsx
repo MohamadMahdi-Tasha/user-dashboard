@@ -45,7 +45,7 @@ export default function LoginPage() {
                     </h6>
                 </div>
             </div>
-            <NameAndLogoComponent rounded={'right'} />
+            <NameAndLogoComponent />
         </div>
     );
 }

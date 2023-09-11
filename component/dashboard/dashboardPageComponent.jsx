@@ -20,9 +20,9 @@ export default function DashboardPageComponent({children}) {
     // Conditional Rendering
     if (isUserLoggedIn) {
         return (
-            <section className={'flex lg:flex-row flex-col gap-[20px] h-[100vh] bg-darkBlue'}>
+            <section className={'flex lg:flex-row flex-col lg:gap-[20px] h-[100vh] bg-darkBlue'}>
                 <DashboardNavBar isOpened={isNavOpened} closeFunction={() => setNavOpened(false)} />
-                <main className={'p-[20px] bg-white/50 lg:w-[80vw] w-full lg:rounded-r-[30px] lg:h-full h-[750px] overflow-auto'}>
+                <main className={'p-[20px] bg-white/50 lg:w-[80vw] w-full lg:h-full h-[750px] overflow-auto'}>
                     <HolderComponent>
                         <DashboardMainHeaderComponent onClickOfShowNavBtn={() => setNavOpened(true)} />
                         {children}
