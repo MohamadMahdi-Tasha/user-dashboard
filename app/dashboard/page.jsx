@@ -9,7 +9,7 @@ export default function DashboardPage() {
     // Returning JSX
     return (
         <DashboardPageComponent>
-            <title>داشبورد کاربر - داشبورد</title>
+            <title>داشبورد کاربر فونیکس سرور - داشبورد</title>
             <div className={'grid lg:grid-cols-5 grid-cols-1 gap-[10px] lg:mb-[20px] mb-[30px]'}>
                 <FeaturesComponent icon={'bi-server'} title={'سرور ابری'} fgColor={'text-white'} bgColor={'bg-orange-500'} subtitle={'ساخت و مدیریت سرور های ابری'} />
                 <FeaturesComponent icon={'bi-cloud-download'} title={'توزیع ابری'} fgColor={'text-white'} bgColor={'bg-teal-500'} subtitle={'امنیت ابری'} />

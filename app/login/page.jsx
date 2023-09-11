@@ -25,7 +25,7 @@ export default function LoginPage() {
     if (isUserLoggedIn) {
         return (
             <div className={'flex lg:h-[100vh] lg:flex-row gap-[20px] flex-col-reverse bg-darkBlue/20'}>
-                <title>داشبورد کاربر - ثبت نام</title>
+                <title>داشبورد کاربر فونیکس سرور - ثبت نام</title>
                 <div className={'overflow-auto lg:w-[50%] w-full'}>
                     <div className={'lg:p-[20px] p-[15px] max-w-[1000px] mx-auto'} >
                         <WelcomeMassageComponent />

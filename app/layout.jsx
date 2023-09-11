@@ -31,8 +31,8 @@ const iranSansXFont = localFont({
 
 // Defining Meta Data Of Pages
 export const metadata = {
-    title: 'داشبورد کاربر',
-    description: 'داشبورد کاربران و پنل کاربری جناب ابراهیمی',
+    title: 'داشبورد کاربر فونیکس سرور',
+    description: 'داشبورد کاربران و پنل کاربری فونیکس سرور',
     keywords: 'پنل,کاربر,کاربری,داشبورد,پنل کاربری,سرور,ایران,اینترنت,panel,user,dashboard,user dashboard,server,iran,internet',
     themeColor: '#FF6120',
     viewport: 'width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0',

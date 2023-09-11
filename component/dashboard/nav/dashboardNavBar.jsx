@@ -22,7 +22,7 @@ export default function DashboardNavBar({isOpened, closeFunction}) {
                 <ul className={'p-[20px] gap-[10px] flex flex-col'}>
                     <DashboardNavBarItem link={'/dashboard'} name={'داشبورد'} icon={'bi-house'} />
                     <DashboardNavBarItem link={'/dashboard/hosts'} name={'دامنه ها'} icon={'bi-cloud-download'} />
-                    <DashboardNavOpenableItem link={'/dashboard/cloud-datacenter'} name={'دیتاسنتر ابری'} icon={'bi bi-building'}>
+                    <DashboardNavOpenableItem link={'/dashboard/cloud-datacenter/cloud-server'} name={'دیتاسنتر ابری'} icon={'bi bi-building'}>
                         <li>
                             <Link href={'/dashboard/cloud-datacenter/cloud-server'}>
                                 <button className={'hover:bg-white/30 py-[8px] pl-[10px] pr-[30px] transition-all duration-500 text-white truncate w-full text-start'} tabIndex={-1}>

@@ -14,7 +14,7 @@ export default function InputComponent({type, required, name, min, max}) {
         // Returning JSX
         return (
             <div className={'flex bg-darkBlue/30 w-full rounded-[10px] overflow-hidden'}>
-                <input required className={'w-full lg:p-[15px] p-[8px] focus:bg-darkBlue/30 transition-all duration-500 bg-transparent outline-0'} type={(isShowing) ? 'text' : 'password'} id={name} name='password' />
+                <input required className={'w-full lg:text-[16px] text-[14px] lg:p-[15px] p-[8px] focus:bg-darkBlue/30 transition-all duration-500 bg-transparent outline-0'} type={(isShowing) ? 'text' : 'password'} id={name} name='password' />
                 <button onClick={() => setShowing(prevState => !prevState)}
                         type={'button'} className={'w-[50px] h-full aspect-square flex items-center justify-center hover:bg-darkBlue/30 transition-all duration-500'}>
                     {
@@ -33,7 +33,7 @@ export default function InputComponent({type, required, name, min, max}) {
                    type='number'
                    id={name}
                    name={name}
-                   className={'bg-darkBlue/30 w-full lg:p-[15px] p-[8px] appearance-none no-arrow rounded-[10px] outline-0 focus:bg-darkBlue/40 transition-all duration-500 text-darkBlue'}/>
+                   className={'bg-darkBlue/30 w-full lg:text-[16px] text-[14px] lg:p-[15px] p-[8px] appearance-none no-arrow rounded-[10px] outline-0 focus:bg-darkBlue/40 transition-all duration-500 text-darkBlue'}/>
         );
     } else {
         return (
@@ -41,7 +41,7 @@ export default function InputComponent({type, required, name, min, max}) {
                    type={type}
                    id={name}
                    name={name}
-                   className={'bg-darkBlue/30 w-full lg:p-[15px] p-[8px] rounded-[10px] outline-0 focus:bg-darkBlue/40 transition-all duration-500 text-darkBlue'}/>
+                   className={'bg-darkBlue/30 w-full lg:text-[16px] text-[14px] lg:p-[15px] p-[8px] rounded-[10px] outline-0 focus:bg-darkBlue/40 transition-all duration-500 text-darkBlue'}/>
         );
     }
 }
